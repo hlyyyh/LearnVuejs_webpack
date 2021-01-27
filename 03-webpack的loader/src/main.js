@@ -9,9 +9,9 @@ console.log(sub(20, 30))
 console.log(divide(20, 30))
 
 //3、依赖css
-//打包报错：You may need an appropriate loader to handle this file type.
-//从官网搜loader
-//1、安装：npm install --save-dev css-loader
-//2、webpack.config.js加入module
-//3、npm run build
 require('./css/normal.css')
+
+//4、依赖less
+//less-loader:负责对less文件进行加载 less：对less内容进行转化，转化为css，也可以使用手动less
+require('./css/special.less')
+document.writeln('<h2>hello webpack</h2>')
